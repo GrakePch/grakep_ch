@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@plugin '@tailwindcss/typography';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('assets/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto Flex";
+    src: url('assets/fonts/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf') format('truetype');
+    font-display: swap;
+}
+
+@theme {
+    --font-sans: "Space Grotesk", "sans-serif";
+    --font-sans--font-feature-settings: "case", "ss04", "zero";
+    --font-title: "Roboto Flex", "sans-serif";
+    --font-title--font-variation-settings: 'opsz' 48;
+    --font-title--font-feature-settings: "case";
+}

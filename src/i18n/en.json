@@ -1,0 +1,30 @@
+{
+  "tabs": {
+    "home": "Home",
+    "projects": "Projects",
+    "logos": "Logos",
+    "friends": "Friends"
+  },
+  "home": {
+    "bio": "A Sol III native who loves to realize aesthetic creativity through computer technologies."
+  },
+  "projects": {
+    "role": "Role",
+    "status": "Status",
+    "read_more": "Read More",
+    "link": {
+      "github": "GitHub Repo",
+      "bilibili": "bilibili Video",
+      "youtube": "YouTube Video",
+      "download": "Download"
+    },
+    "tag": {
+      "all": "All",
+      "minecraft": "Minecraft",
+      "star_citizen": "Star Citizen",
+      "twisty_puzzle_design": "Twisty Puzzle Design",
+      "midi_works": "Midi Works",
+      "resourcepack": "Resourcepack"
+    }
+  }
+}

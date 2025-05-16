@@ -1,0 +1,30 @@
+{
+  "tabs": {
+    "home": "主页",
+    "projects": "项目",
+    "logos": "标志",
+    "friends": "朋友"
+  },
+  "home": {
+    
+  },
+  "projects": {
+    "role": "项目角色",
+    "status": "项目状态",
+    "read_more": "阅读更多",
+    "link": {
+      "github": "GitHub 仓库",
+      "bilibili": "bilibili 视频",
+      "youtube": "YouTube 视频",
+      "download": "下载"
+    },
+    "tag": {
+      "all": "全部",
+      "minecraft": "Minecraft",
+      "star_citizen": "星际公民",
+      "twisty_puzzle_design": "魔方设计",
+      "midi_works": "Midi 作品",
+      "resourcepack": "资源包"
+    }
+  }
+}
