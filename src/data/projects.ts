@@ -11,8 +11,147 @@ export type Project = {
   tags: string[];
 };
 
-export const projects = [
+export const projects : Project[] = [
   // Minecraft
+  {
+    id: "iconic-enchantments",
+    title: {
+      en: "Iconic Enchantments",
+      zh: "图标附魔书",
+    },
+    description: {
+      en: "3D enchanted books with unified icon design! 1.21.5+ WITHOUT CIT or Optifine!",
+      zh: "用图标区分附魔！原版可用！附魔书还有3D模型！",
+    },
+    startDate: "2025-03",
+    endDate: "2025-05",
+    link: [
+      ["Modrinth", "https://modrinth.com/resourcepack/iconic-enchantments-3d"],
+      ["红石中继站", "https://www.mczwlt.net/resource/8sw1n42m"],
+      ["MineBBS", "https://www.minebbs.com/resources/d-cit.10994/"],
+    ],
+    role: { en: "Creator", zh: "创建者" },
+    status: {
+      en: "Release 2.0",
+      zh: "正式版 2.0",
+    },
+    tags: ["minecraft", "resourcepack"],
+  },
+  {
+    id: "diagonal-perfect-rails",
+    title: {
+      en: "Diagonal Perfect Rails",
+      zh: "完美对角线铁轨",
+    },
+    description: {
+      en: "65k downloads! Curved rails now go 45 degrees straight! Minecarts now run smoothly on continuous curved rails!",
+      zh: "6.5万下载！将弯道铁轨掰成45度直线！矿车可以在连续弯道上流畅运行啦！",
+    },
+    startDate: "2024-02",
+    endDate: "2025-03",
+    link: [
+      ["Modrinth", "https://modrinth.com/resourcepack/diagonal-perfect-rails-3d"],
+      ["MineBBS", "https://www.minebbs.com/resources/3d.7484/"],
+    ],
+    role: { en: "Creator", zh: "创建者" },
+    status: {
+      en: "Release 2.1",
+      zh: "正式版 2.1",
+    },
+    tags: ["minecraft", "resourcepack"],
+  },
+  {
+    id: "immersive-redstone-display",
+    title: {
+      en: "Immersive Redstone Display",
+      zh: "沉浸红石显示",
+    },
+    description: {
+      en: "Redstone wires now show their power with segment displays!",
+      zh: "一款体素对齐、段码字风格的红石粉强度显示资源包。0-15的信号强度对应16进制的0-F。",
+    },
+    startDate: "2024-02",
+    endDate: "2024-02",
+    link: [
+      ["Modrinth", "https://modrinth.com/resourcepack/immersive-redstone-display"],
+      ["MineBBS", "https://www.minebbs.com/resources/7440/"],
+    ],
+    role: { en: "Creator", zh: "创建者" },
+    status: {
+      en: "Release 1.0",
+      zh: "正式版 1.0",
+    },
+    tags: ["minecraft", "resourcepack"],
+  },
+  {
+    id: "accurate-clock",
+    title: {
+      en: "Accurate Clock",
+      zh: "精准时钟",
+    },
+    description: {
+      en: "Accurate clocks can tell you time in minute's level of accuracy!",
+      zh: "为您在Minecraft中提供分钟级精准的报时！",
+    },
+    startDate: "2024-03",
+    endDate: "2024-03",
+    link: [
+      ["Modrinth", "https://modrinth.com/resourcepack/accurate-clock"],
+      ["MineBBS", "https://www.minebbs.com/resources/7564/"],
+    ],
+    role: { en: "Creator", zh: "创建者" },
+    status: {
+      en: "Release 1.1",
+      zh: "正式版 1.1",
+    },
+    tags: ["minecraft", "resourcepack"],
+  },
+  {
+    id: "diagonal-perfect-copper-grates",
+    title: {
+      en: "Diagonal Perfect Copper Grates",
+      zh: "完美对角线铜格栅",
+    },
+    description: {
+      en: "Copper Grates with 45-degree grids. Connected textures supported!",
+      zh: "拥有45°网格的铜格栅，支持 CTM 连接纹理！",
+    },
+    startDate: "2025-03",
+    endDate: "2025-03",
+    link: [
+      ["Modrinth", "https://modrinth.com/resourcepack/diagonal-perfect-copper-grates"]
+    ],
+    role: { en: "Creator", zh: "创建者" },
+    status: {
+      en: "Release 1.1",
+      zh: "正式版 1.1",
+    },
+    tags: ["minecraft", "resourcepack"],
+  },
+  {
+    id: "waxed-and-infested-outlines",
+    title: {
+      en: "Waxed & Infested Outlines",
+      zh: "带边框的涂蜡与虫蚀方块",
+    },
+    description: {
+      en: "Highlight waxed and infested blocks with inverted hull outlines! Resourcepack compatible!",
+      zh: "用负法线模型给涂蜡方块和虫蚀方块加上边框！兼容资源包！"
+    },
+    startDate: "2025-05",
+    endDate: "2025-05",
+    thumbnail: "/images/waxed-and-infested-outlines.jpeg",
+    link: [
+      ["Modrinth", "https://modrinth.com/resourcepack/waxed-and-infested-outlines"],
+      ["红石中继站", "https://www.mczwlt.net/resource/ea8vrzij"],
+    ],
+    role: { en: "Creator", zh: "创建者" },
+    status: {
+      en: "Release 1.0",
+      zh: "正式版 1.0",
+    },
+    tags: ["minecraft", "resourcepack"],
+  },
   {
     id: "minecraft-alter",
     title: {
@@ -52,8 +191,8 @@ export const projects = [
     link: [["Modrinth", "https://modrinth.com/resourcepack/blockpixel-extend-ctm"]],
     role: { en: "Creator", zh: "创建者" },
     status: {
-      en: "In Progress",
-      zh: "开发中",
+      en: "Alpha 0.8",
+      zh: "Alpha 0.8",
     },
     tags: ["minecraft", "resourcepack"],
   },
