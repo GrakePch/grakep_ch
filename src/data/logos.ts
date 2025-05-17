@@ -55,7 +55,7 @@ const logos: Logo[] = [
       zh: "Pico+",
     },
     description: {
-      en: "Pico+ is a third-part app to manage your hanger in Star Citizen, which is no longer maintained.",
+      en: "Pico+ is a third-party app to manage your hanger in Star Citizen, which is no longer maintained.",
       zh: "Pico+ 是一个用于管理《星际公民》机库的第三方应用，现已不再维护。",
     },
     date: "2024-04",

@@ -34,7 +34,10 @@ const friends = [
     id: "hurrypeng",
     name: "HurryPeng",
     avatar: "https://avatars.githubusercontent.com/u/25132396?v=4",
-    links: [{ label: "GitHub", url: "https://github.com/HurryPeng" }],
+    links: [
+      { label: "Website", url: "https://hurrypeng.cc/" },
+      { label: "GitHub", url: "https://github.com/HurryPeng" },
+    ],
   },
   {
     id: "pairman",
@@ -49,7 +52,10 @@ const friends = [
     id: "jakob-zero",
     name: "Jakob.zero",
     avatar: jakob_zero,
-    links: [{ label: "Twitter", url: "https://twitter.com/Jakob_zero" }],
+    links: [
+      { label: "Twitter", url: "https://twitter.com/Jakob_zero" },
+      { label: "Modrinth", url: "https://modrinth.com/user/Jakobzero" },
+    ],
   },
   {
     id: "will-wu",

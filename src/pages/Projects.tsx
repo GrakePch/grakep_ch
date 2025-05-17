@@ -109,14 +109,14 @@ export default function Projects() {
               <p className="text-sm text-stone-600 dark:text-stone-400">
                 {t("projects.status")}: {p.status[lang]}
               </p>
-              {(Array.isArray(p.link) && p.link.length > 0 || available[p.id]) && (
+              {(Array.isArray(p.links) && p.links.length > 0 || available[p.id]) && (
                 <div className="flex flex-wrap gap-x-2">
                   {available[p.id] && (
                     <Link to={`/projects/${p.id}`} className="text-sm text-red-700 dark:text-red-400 underline underline-offset-2">
                       {t("projects.read_more")}
                     </Link>
                   )}
-                  {p.link?.map(([label, url], idx) => (
+                  {p.links?.map(([label, url], idx) => (
                     <a key={idx} href={url} target="_blank" rel="noopener noreferrer" className="text-sm text-red-700 dark:text-red-400 underline underline-offset-2">
                       {t(`projects.link.${label}`, label)}
                     </a>

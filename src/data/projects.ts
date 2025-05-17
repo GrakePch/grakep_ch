@@ -5,7 +5,7 @@ export type Project = {
   startDate: string;
   endDate: string;
   thumbnail?: string;
-  link?: [string, string][];
+  links?: [string, string][];
   role: Record<string, string>;
   status: Record<string, string>;
   tags: string[];
@@ -25,7 +25,7 @@ export const projects: Project[] = [
     },
     startDate: "2025-03",
     endDate: "2025-05",
-    link: [
+    links: [
       ["Modrinth", "https://modrinth.com/resourcepack/iconic-enchantments-3d"],
       ["红石中继站", "https://www.mczwlt.net/resource/8sw1n42m"],
       ["MineBBS", "https://www.minebbs.com/resources/d-cit.10994/"],
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     },
     startDate: "2024-02",
     endDate: "2025-03",
-    link: [
+    links: [
       ["Modrinth", "https://modrinth.com/resourcepack/diagonal-perfect-rails-3d"],
       ["MineBBS", "https://www.minebbs.com/resources/3d.7484/"],
     ],
@@ -72,7 +72,7 @@ export const projects: Project[] = [
     },
     startDate: "2024-02",
     endDate: "2024-02",
-    link: [
+    links: [
       ["Modrinth", "https://modrinth.com/resourcepack/immersive-redstone-display"],
       ["MineBBS", "https://www.minebbs.com/resources/7440/"],
     ],
@@ -95,7 +95,7 @@ export const projects: Project[] = [
     },
     startDate: "2024-03",
     endDate: "2024-03",
-    link: [
+    links: [
       ["Modrinth", "https://modrinth.com/resourcepack/accurate-clock"],
       ["MineBBS", "https://www.minebbs.com/resources/7564/"],
     ],
@@ -118,7 +118,7 @@ export const projects: Project[] = [
     },
     startDate: "2025-03",
     endDate: "2025-03",
-    link: [["Modrinth", "https://modrinth.com/resourcepack/diagonal-perfect-copper-grates"]],
+    links: [["Modrinth", "https://modrinth.com/resourcepack/diagonal-perfect-copper-grates"]],
     role: { en: "Creator", zh: "创建者" },
     status: {
       en: "Release 1.1",
@@ -139,7 +139,7 @@ export const projects: Project[] = [
     startDate: "2025-05",
     endDate: "2025-05",
     thumbnail: "/images/waxed-and-infested-outlines.jpeg",
-    link: [
+    links: [
       ["Modrinth", "https://modrinth.com/resourcepack/waxed-and-infested-outlines"],
       ["红石中继站", "https://www.mczwlt.net/resource/ea8vrzij"],
     ],
@@ -162,7 +162,7 @@ export const projects: Project[] = [
     },
     startDate: "2022-12",
     endDate: "2023-05",
-    link: [
+    links: [
       ["github", "https://github.com/GrakePch/OctaCubic"],
       ["YouTube Demo 1", "https://youtu.be/scn54DyVGs8"],
       ["YouTube Demo 2", "https://youtu.be/QK_Q4ngvDAE"],
@@ -186,7 +186,7 @@ export const projects: Project[] = [
     },
     startDate: "2019-11",
     endDate: "2024-01",
-    link: [["Modrinth", "https://modrinth.com/resourcepack/blockpixel-extend-ctm"]],
+    links: [["Modrinth", "https://modrinth.com/resourcepack/blockpixel-extend-ctm"]],
     role: { en: "Creator", zh: "创建者" },
     status: {
       en: "Alpha 0.8",
@@ -206,7 +206,7 @@ export const projects: Project[] = [
     },
     startDate: "2020-02",
     endDate: "2020-06",
-    link: [["Modrinth", "https://modrinth.com/resourcepack/blockpixel-extend-pbr"]],
+    links: [["Modrinth", "https://modrinth.com/resourcepack/blockpixel-extend-pbr"]],
     role: { en: "Creator", zh: "创建者" },
     status: {
       en: "Archived",
@@ -226,7 +226,7 @@ export const projects: Project[] = [
     },
     startDate: "2019-11",
     endDate: "2019-11",
-    link: [["download", "https://grakep.ch/project-files/bpext/BlockPixel_DLC_JEI_1-12-2.zip"]],
+    links: [["download", "https://grakep.ch/project-files/bpext/BlockPixel_DLC_JEI_1-12-2.zip"]],
     role: { en: "Creator", zh: "创建者" },
     status: {
       en: "Archived",
@@ -246,7 +246,7 @@ export const projects: Project[] = [
     },
     startDate: "2015-05",
     endDate: "2019-07",
-    link: [["Planet Minecraft", "https://www.planetminecraft.com/texture-pack/9-squares-texture-aka-3x3-texture/"]],
+    links: [["Planet Minecraft", "https://www.planetminecraft.com/texture-pack/9-squares-texture-aka-3x3-texture/"]],
     role: { en: "Creator", zh: "创建者" },
     status: {
       en: "Archived",
@@ -266,7 +266,7 @@ export const projects: Project[] = [
     },
     startDate: "2019-09",
     endDate: "2019-09",
-    link: [["bilibili", "https://www.bilibili.com/video/BV1tE411X7c9"]],
+    links: [["bilibili", "https://www.bilibili.com/video/BV1tE411X7c9"]],
     role: { en: "Creator", zh: "创建者" },
     status: {
       en: "Completed",
@@ -286,7 +286,7 @@ export const projects: Project[] = [
     },
     startDate: "2019-09",
     endDate: "2019-09",
-    link: [["bilibili", "https://www.bilibili.com/video/BV1U4411y7Xs"]],
+    links: [["bilibili", "https://www.bilibili.com/video/BV1U4411y7Xs"]],
     role: { en: "Creator", zh: "创建者" },
     status: {
       en: "Completed",
@@ -306,7 +306,7 @@ export const projects: Project[] = [
     },
     startDate: "2019-08",
     endDate: "2019-08",
-    link: [["bilibili", "https://www.bilibili.com/video/BV1t441197YB"]],
+    links: [["bilibili", "https://www.bilibili.com/video/BV1t441197YB"]],
     role: { en: "Creator", zh: "创建者" },
     status: {
       en: "Completed",
@@ -326,7 +326,7 @@ export const projects: Project[] = [
     },
     startDate: "2017-01",
     endDate: "2017-01",
-    link: [["Planet Minecraft", "https://www.planetminecraft.com/project/find-the-button-diamond-button/"]],
+    links: [["Planet Minecraft", "https://www.planetminecraft.com/project/find-the-button-diamond-button/"]],
     role: { en: "Creator", zh: "创建者" },
     status: {
       en: "Completed",
@@ -346,7 +346,7 @@ export const projects: Project[] = [
     },
     startDate: "2016-08",
     endDate: "2016-08",
-    link: [["Planet Minecraft", "https://www.planetminecraft.com/project/find-the-button-wooden-stone-button/"]],
+    links: [["Planet Minecraft", "https://www.planetminecraft.com/project/find-the-button-wooden-stone-button/"]],
     role: { en: "Creator", zh: "创建者" },
     status: {
       en: "Completed",
@@ -367,7 +367,7 @@ export const projects: Project[] = [
     startDate: "2015-08",
     endDate: "2015-08",
     thumbnail: "/images/piston-gate-2x0625.jpg",
-    link: [["bilibili", "https://www.bilibili.com/video/BV1Ws411m7BH"]],
+    links: [["bilibili", "https://www.bilibili.com/video/BV1Ws411m7BH"]],
     role: { en: "Creator", zh: "创建者" },
     status: {
       en: "Completed",
@@ -388,7 +388,7 @@ export const projects: Project[] = [
     startDate: "2014-09",
     endDate: "2014-09",
     thumbnail: "/images/piston-gate-2x075.jpg",
-    link: [["bilibili", "https://www.bilibili.com/video/BV15x411K7RE"]],
+    links: [["bilibili", "https://www.bilibili.com/video/BV15x411K7RE"]],
     role: { en: "Creator", zh: "创建者" },
     status: {
       en: "Completed",
@@ -409,7 +409,7 @@ export const projects: Project[] = [
     startDate: "2015-01",
     endDate: "2015-01",
     thumbnail: "/images/slime-tree-farm-2.jpg",
-    link: [["bilibili", "https://www.bilibili.com/video/BV1Sx411w7tV"]],
+    links: [["bilibili", "https://www.bilibili.com/video/BV1Sx411w7tV"]],
     role: { en: "Creator", zh: "创建者" },
     status: {
       en: "Completed",
@@ -430,7 +430,7 @@ export const projects: Project[] = [
     startDate: "2014-12",
     endDate: "2014-12",
     thumbnail: "/images/slime-tree-farm.jpg",
-    link: [["bilibili", "https://www.bilibili.com/video/BV1jx411N7jV"]],
+    links: [["bilibili", "https://www.bilibili.com/video/BV1jx411N7jV"]],
     role: { en: "Creator", zh: "创建者" },
     status: {
       en: "Completed",
@@ -448,7 +448,7 @@ export const projects: Project[] = [
     },
     startDate: "2024-12",
     endDate: "2025-04",
-    link: [["website", "https://keys.grakeinterplanetary.com/"]],
+    links: [["website", "https://keys.grakeinterplanetary.com/"]],
     role: { en: "Designer, Developer", zh: "设计、开发" },
     status: {
       en: "In Development",
@@ -465,7 +465,7 @@ export const projects: Project[] = [
     },
     startDate: "2024-11",
     endDate: "2025-03",
-    link: [
+    links: [
       ["website", "https://finder.grakeinterplanetary.com/"],
       ["github", "https://github.com/GrakePch/FSD-item-finder"],
     ],
@@ -485,7 +485,7 @@ export const projects: Project[] = [
     },
     startDate: "2024-09",
     endDate: "2024-12",
-    link: [
+    links: [
       ["website", "https://maps.grakeinterplanetary.com/"],
       ["github", "https://github.com/GrakePch/FSD-star-map"],
     ],
@@ -505,7 +505,7 @@ export const projects: Project[] = [
     },
     startDate: "2024-03",
     endDate: "2024-12",
-    link: [
+    links: [
       ["website", "https://ships.grakeinterplanetary.com/"],
       ["github", "https://github.com/GrakePch/Fancy-SC-Ship-Info"],
     ],
@@ -526,7 +526,7 @@ export const projects: Project[] = [
     startDate: "2023-02",
     endDate: "2023-06",
     thumbnail: "/images/sc-keybinding-visualizer.png",
-    link: [["github", "https://github.com/GrakePch/sc-action-maps"]],
+    links: [["github", "https://github.com/GrakePch/sc-action-maps"]],
     role: { en: "Designer, Developer", zh: "设计、开发" },
     status: {
       en: "Archived. An alternative project is being developed.",
@@ -567,7 +567,7 @@ export const projects: Project[] = [
     startDate: "2022-06",
     endDate: "2022-08",
     thumbnail: "/images/project-eclipse.webp",
-    link: [
+    links: [
       ["youtube", "https://youtu.be/ObES2rH-0Ws"],
       ["bilibili", "https://www.bilibili.com/video/BV11F411w7TG"],
     ],
@@ -592,7 +592,7 @@ export const projects: Project[] = [
     startDate: "2017-04",
     endDate: "2017-04",
     thumbnail: "/images/pentagon331.JPG",
-    link: [
+    links: [
       ["bilibili", "https://www.bilibili.com/video/BV1jx411Q7nB"],
       ["youtube", "https://www.youtube.com/watch?v=oisth0web_s"],
     ],
@@ -616,7 +616,7 @@ export const projects: Project[] = [
     startDate: "2013-11",
     endDate: "2013-11",
     thumbnail: "/images/bandaged444.JPG",
-    link: [],
+    links: [],
     role: { en: "Creator", zh: "原作" },
     status: {
       en: "Completed",
@@ -637,7 +637,7 @@ export const projects: Project[] = [
     startDate: "2012-08",
     endDate: "2012-08",
     thumbnail: "/images/bandaged333.JPG",
-    link: [],
+    links: [],
     role: { en: "Creator", zh: "原作" },
     status: {
       en: "Completed",
@@ -654,7 +654,7 @@ export const projects: Project[] = [
     },
     startDate: "2020-08",
     endDate: "2020-08",
-    link: [["bilibili", "https://www.bilibili.com/video/BV1bv41117W6"]],
+    links: [["bilibili", "https://www.bilibili.com/video/BV1bv41117W6"]],
     role: { en: "Remixer", zh: "改编" },
     status: {
       en: "Completed",
@@ -671,7 +671,7 @@ export const projects: Project[] = [
     startDate: "2017-05",
     endDate: "2017-05",
     thumbnail: "/images/wave-particle.jpg",
-    link: [["bilibili", "https://www.bilibili.com/video/BV1wx411e7ig"]],
+    links: [["bilibili", "https://www.bilibili.com/video/BV1wx411e7ig"]],
     role: { en: "Composer", zh: "编曲" },
     status: {
       en: "Completed",
@@ -688,7 +688,7 @@ export const projects: Project[] = [
     startDate: "2017-03",
     endDate: "2017-03",
     thumbnail: "/images/permutation.jpg",
-    link: [["bilibili", "https://www.bilibili.com/video/BV1qx411C7Cm"]],
+    links: [["bilibili", "https://www.bilibili.com/video/BV1qx411C7Cm"]],
     role: { en: "Composer", zh: "编曲" },
     status: {
       en: "Completed",
