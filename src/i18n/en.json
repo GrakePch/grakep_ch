@@ -13,6 +13,7 @@
     "status": "Status",
     "read_more": "Read More",
     "link": {
+      "website": "Website",
       "github": "GitHub Repo",
       "bilibili": "bilibili Video",
       "youtube": "YouTube Video",
@@ -24,7 +25,8 @@
       "star_citizen": "Star Citizen",
       "twisty_puzzle_design": "Twisty Puzzle Design",
       "midi_works": "Midi Works",
-      "resourcepack": "Resourcepack"
+      "resourcepack": "Resourcepack",
+      "web_dev": "Web Dev"
     }
   }
 }

@@ -11,7 +11,7 @@ export type Project = {
   tags: string[];
 };
 
-export const projects : Project[] = [
+export const projects: Project[] = [
   // Minecraft
   {
     id: "iconic-enchantments",
@@ -118,9 +118,7 @@ export const projects : Project[] = [
     },
     startDate: "2025-03",
     endDate: "2025-03",
-    link: [
-      ["Modrinth", "https://modrinth.com/resourcepack/diagonal-perfect-copper-grates"]
-    ],
+    link: [["Modrinth", "https://modrinth.com/resourcepack/diagonal-perfect-copper-grates"]],
     role: { en: "Creator", zh: "创建者" },
     status: {
       en: "Release 1.1",
@@ -136,7 +134,7 @@ export const projects : Project[] = [
     },
     description: {
       en: "Highlight waxed and infested blocks with inverted hull outlines! Resourcepack compatible!",
-      zh: "用负法线模型给涂蜡方块和虫蚀方块加上边框！兼容资源包！"
+      zh: "用负法线模型给涂蜡方块和虫蚀方块加上边框！兼容资源包！",
     },
     startDate: "2025-05",
     endDate: "2025-05",
@@ -442,22 +440,99 @@ export const projects : Project[] = [
   },
   // Star Citizen
   {
+    id: "sc-fancy-keybinding-visualizer",
+    title: { en: "Fancy Keybinding Visualizer", zh: "星际公民键位可视化（新版）" },
+    description: {
+      en: "A web app to visualize and edit keybindings for the game Star Citizen. A remake of an old project.",
+      zh: "为游戏《星际公民》开发的键位绑定可视化与编辑的网页工具。是一个老项目的重制版。",
+    },
+    startDate: "2024-12",
+    endDate: "2025-04",
+    link: [["website", "https://keys.grakeinterplanetary.com/"]],
+    role: { en: "Designer, Developer", zh: "设计、开发" },
+    status: {
+      en: "In Development",
+      zh: "开发中",
+    },
+    tags: ["star_citizen", "web_dev"],
+  },
+  {
+    id: "sc-item-finder",
+    title: { en: "Star Citizen Item Finder", zh: "星际寻物" },
+    description: {
+      en: "A web app to help Star Citizen players find where & how much to buy items. (Chinese only)",
+      zh: "为星际公民提供查询物品购买地点与价格的服务的网页应用。",
+    },
+    startDate: "2024-11",
+    endDate: "2025-03",
+    link: [
+      ["website", "https://finder.grakeinterplanetary.com/"],
+      ["github", "https://github.com/GrakePch/FSD-item-finder"],
+    ],
+    role: { en: "Designer, Front-end Developer", zh: "设计、前端开发" },
+    status: {
+      en: "Actively Maintained",
+      zh: "积极维护中",
+    },
+    tags: ["star_citizen", "web_dev"],
+  },
+  {
+    id: "sc-star-map",
+    title: { en: "Eyes on Star Citizen", zh: "星际公民之眼" },
+    description: {
+      en: "A web app showing the real-time positions of the celestial bodies and the locations of the game Star Citizen. Also displaying the local times and other information.",
+      zh: "展示《星际公民》游戏内天体和地点所在实时位置的网页应用。也展示了当地时间和其他信息。",
+    },
+    startDate: "2024-09",
+    endDate: "2024-12",
+    link: [
+      ["website", "https://maps.grakeinterplanetary.com/"],
+      ["github", "https://github.com/GrakePch/FSD-star-map"],
+    ],
+    role: { en: "Designer, Developer", zh: "设计、开发" },
+    status: {
+      en: "Paused",
+      zh: "暂停维护",
+    },
+    tags: ["star_citizen", "web_dev"],
+  },
+  {
+    id: "sc-fancy-ship-info",
+    title: { en: "Fancy Ship Info", zh: "星际公民飞船信息" },
+    description: {
+      en: "A web app displaying the information of the vehicles and the personal weapons in the game Star Citizen.",
+      zh: "展示《星际公民》游戏内飞船和个人武器的信息的网页应用。",
+    },
+    startDate: "2024-03",
+    endDate: "2024-12",
+    link: [
+      ["website", "https://ships.grakeinterplanetary.com/"],
+      ["github", "https://github.com/GrakePch/Fancy-SC-Ship-Info"],
+    ],
+    role: { en: "Designer, Developer", zh: "设计、开发" },
+    status: {
+      en: "Paused. An alternative project is planned.",
+      zh: "暂停维护。正在计划替代项目。",
+    },
+    tags: ["star_citizen", "web_dev"],
+  },
+  {
     id: "sc-keybinding-visualizer",
     title: { en: "Star Citizen Keybinding Visualizer", zh: "星际公民键位可视化" },
     description: {
       en: "An online keybinding visualizer for Star Citizen.",
-      zh: "在线的星际公民键位可视化工具",
+      zh: "为游戏《星际公民》开发的键位绑定可视化与编辑的网页工具。",
     },
     startDate: "2023-02",
     endDate: "2023-06",
     thumbnail: "/images/sc-keybinding-visualizer.png",
     link: [["github", "https://github.com/GrakePch/sc-action-maps"]],
-    role: { en: "Creator", zh: "创建者" },
+    role: { en: "Designer, Developer", zh: "设计、开发" },
     status: {
       en: "Archived. An alternative project is being developed.",
       zh: "已归档，正在开发替代项目",
     },
-    tags: ["star_citizen"],
+    tags: ["star_citizen", "web_dev"],
   },
   {
     id: "carrack-exodus",
@@ -467,12 +542,36 @@ export const projects : Project[] = [
     },
     description: {
       en: "A short film shot in the game Star Citizen. A Carrack filled with cargo departures from Lorville as usual. However, this trip may not be as normal as before for the only three crew members on the ship...",
-      zh: "一个在星际公民游戏内完成拍摄的微电影。一艘克拉克满载着货物从罗威尔起飞，一切似乎如常，但此次旅程对于飞船上仅有的三名乘员来说有些不同……",
+      zh: "一部在《星际公民》游戏内拍摄的微电影。一艘克拉克满载着货物从罗威尔起飞，一切似乎如常，但此次旅程对于飞船上仅有的三名乘员来说有些不同……",
     },
     startDate: "2020-03",
     endDate: "2020-04",
     thumbnail: "/images/carrack-exodus.png",
     role: { en: "Writer, Cast", zh: "编剧、演员" },
+    status: {
+      en: "Completed",
+      zh: "已完成",
+    },
+    tags: ["star_citizen"],
+  },
+  {
+    id: "project-eclipse",
+    title: {
+      en: "Operation SPF 9000+",
+      zh: "日蚀计划",
+    },
+    description: {
+      en: 'A documentary shot in the game Star Citizen. On June 4th, 2952, Crane Expedition set out to the end of Hurston\'s Umbra zone and witnessed a spectacular annular eclipse. The team of 12, aboard a single Carrack vessel, "Anya", recorded their experiences and their journey.',
+      zh: "一部在《星际公民》游戏内拍摄的纪录片。2952年6月4日, 科湾事业所的十二名成员，在经历了一系列挑战之后，到达了赫斯顿本影焦点观察到了日环食，并记录下来了完整的过程。",
+    },
+    startDate: "2022-06",
+    endDate: "2022-08",
+    thumbnail: "/images/project-eclipse.webp",
+    link: [
+      ["youtube", "https://youtu.be/ObES2rH-0Ws"],
+      ["bilibili", "https://www.bilibili.com/video/BV11F411w7TG"],
+    ],
+    role: { en: "Logo Designer, Crew Member", zh: "标志设计、队员" },
     status: {
       en: "Completed",
       zh: "已完成",

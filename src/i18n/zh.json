@@ -13,6 +13,7 @@
     "status": "项目状态",
     "read_more": "阅读更多",
     "link": {
+      "website": "官方网站",
       "github": "GitHub 仓库",
       "bilibili": "bilibili 视频",
       "youtube": "YouTube 视频",
@@ -24,7 +25,8 @@
       "star_citizen": "星际公民",
       "twisty_puzzle_design": "魔方设计",
       "midi_works": "Midi 作品",
-      "resourcepack": "资源包"
+      "resourcepack": "资源包",
+      "web_dev": "网页开发"
     }
   }
 }
