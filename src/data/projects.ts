@@ -161,7 +161,7 @@ export const projects: Project[] = [
       zh: "（暂用名）一个模仿Minecraft的OpenGL项目，开发中。",
     },
     startDate: "2022-12",
-    endDate: "2023-05",
+    endDate: "2025-07",
     links: [
       ["github", "https://github.com/GrakePch/OctaCubic"],
       ["YouTube Demo 1", "https://youtu.be/scn54DyVGs8"],
@@ -169,8 +169,8 @@ export const projects: Project[] = [
     ],
     role: { en: "Creator", zh: "创建者" },
     status: {
-      en: "Paused",
-      zh: "已暂停",
+      en: "In Development",
+      zh: "开发中",
     },
     tags: ["minecraft"],
   },
@@ -460,11 +460,11 @@ export const projects: Project[] = [
     id: "sc-item-finder",
     title: { en: "Star Citizen Item Finder", zh: "星际寻物" },
     description: {
-      en: "A web app to help Star Citizen players find where & how much to buy items. (Chinese only)",
+      en: "A web app to help Star Citizen players find where & how much to buy items.",
       zh: "为星际公民提供查询物品购买地点与价格的服务的网页应用。",
     },
     startDate: "2024-11",
-    endDate: "2025-03",
+    endDate: "2025-06",
     links: [
       ["website", "https://finder.grakeinterplanetary.com/"],
       ["github", "https://github.com/GrakePch/FSD-item-finder"],
