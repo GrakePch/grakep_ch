@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { motion, useScroll, useTransform } from "motion/react";
+import { motion, useTransform, useMotionValue } from "motion/react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { applyTheme } from "../utils/theme";
@@ -11,8 +11,9 @@ import logo from "../assets/GKP-2408-draft-cutout.png";
 export default function Header({ scrollLimit = 240 }: { scrollLimit?: number }) {
   const { t } = useTranslation();
   const { theme } = useTheme();
-  const { scrollY } = useScroll();
   const location = useLocation();
+  const scrollY = useMotionValue(0);
+  
   const size = useTransform(scrollY, [0, scrollLimit], [160, 32]);
   const top = useTransform(scrollY, [0, scrollLimit], [56, 20]);
   const left = useTransform(scrollY, [0, scrollLimit], ["50%", "0%"]);
@@ -23,6 +24,29 @@ export default function Header({ scrollLimit = 240 }: { scrollLimit?: number }) 
   useEffect(() => {
     applyTheme(theme);
   }, [theme]);
+
+  // Custom scroll listener
+  useEffect(() => {
+    const handleScroll = () => {
+      scrollY.set(window.scrollY);
+    };
+
+    // Set initial scroll position
+    scrollY.set(window.scrollY);
+    
+    // Add scroll listener
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrollY]);
+
+  // Reset scroll position when route changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    scrollY.set(0);
+  }, [location.pathname, scrollY]);
 
   return (
     <header className="fixed top-0 left-0 w-full p-0 font-bold uppercase bg-stone-300/50 dark:bg-black/50 backdrop-blur-2xl backdrop-saturate-150 z-[100]">
