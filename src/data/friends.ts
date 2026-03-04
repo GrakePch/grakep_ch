@@ -25,7 +25,7 @@ const friends = [
     name: "GZTime",
     avatar: "https://avatars.githubusercontent.com/u/28180262?v=4",
     links: [
-      { label: "Website", url: "https://blog.gztime.cc/" },
+      { label: "Website", url: "https://blog.gzti.me/" },
       { label: "GitHub", url: "https://github.com/GZTimeWalker" },
     ],
     bio: "Walking on the Time Axis.",
